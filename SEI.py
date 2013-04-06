@@ -111,6 +111,7 @@ def how_to():
     set_debug           - debugging option
     set_timestamp       - display timestamps
     set_log             - log send emails
+    set_payloads        - configure webserver and payloads (new)
     send_single_email   - send template to single email
     send_email_to_list  - send email from list
     import_email_list   - load email list
