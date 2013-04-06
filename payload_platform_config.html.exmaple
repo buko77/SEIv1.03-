@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>loading</Title>
+<Script Language="JavaScript">
+
+
+browsername=navigator.appName;
+if (browsername.indexOf("Netscape")!=-1) {browsername="NS"}
+else
+{if (browsername.indexOf("Microsoft")!=-1) {browsername="MSIE"}
+else {browsername="N/A"}};
+
+//detect the browserversion
+browserversion="0";
+if (navigator.appVersion.indexOf("2.")!=-1) {browserversion="2"};
+if (navigator.appVersion.indexOf("3.")!=-1) {browserversion="3"};
+if (navigator.appVersion.indexOf("4.")!=-1) {browserversion="4"};
+if (navigator.appVersion.indexOf("5.")!=-1) {browserversion="5"};
+if (navigator.appVersion.indexOf("6.")!=-1) {browserversion="6"};
+
+// Send visitor to relevant pages
+if (browsername=="NS") {window.location="http://www.google.com"};
+if (browsername=="MSIE"){
+  if (browserversion<4){window.location="http://www.youtube.com"}
+  else {window.location="http://www.youtube.com"}
+}
+if (browsername=="N/A") {window.location="http://sv.wikipedia.org/wiki/Portal:Huvudsida"};
+</script>
+</head>
+
+<body>
+</body>
+</html>
